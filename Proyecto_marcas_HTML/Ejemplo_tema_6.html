@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>EJEMPLO DE UN FORMULARIO</title>
+</head>
+
+<body style="background-color: lightcyan;">
+    <table align="center" width="30%" border="1">
+        <tr>
+
+            <td style="color: rgba(248, 78, 48, 0.952)" colspan="4"><strong>Ejemplo de un
+                    formulario</strong></td>
+            <td style="background-color: lightgreen;"><a href="Contenidos_tema_6.html">Volver al tema 6</a></td> <br>
+
+        </tr>
+    </table>
+<br>
+    <table align="center" width="40%" border="1" bgcolor="#DDDDFF">
+        <form action="procesar.php" method="post" autocomplete="off">
+            <tr>
+                <td><label for="email">Correo Electrónico (Gmail):</label></td>
+                <td align="center"><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="contrasena">Contraseña:</label></td>
+                <td align="center"><input type="password" id="contrasena" name="contrasena" required></td>
+            </tr>
+            <tr>
+                <td><label for="edad">Edad:</label></td>
+                <td align="center"><input type="number" id="edad" name="edad" required></td>
+            </tr>
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td align="center"><input type="text" id="nombre" name="nombre" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="genero">Género:</label><br>
+                    <input type="radio" id="masculino" name="genero" value="masculino"> Masculino <br>
+                    <input type="radio" id="femenino" name="genero" value="femenino"> Femenino <br>
+                    <input type="radio" id="otro" name="genero" value="otro"> Otro
+                    <input type="text" id="otroGenero" name="otroGenero" placeholder="Especificar otro género">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="intereses">Intereses:</label> <br>
+                    <input type="checkbox" id="deporte" name="intereses[]" value="deporte"> Deporte <br>
+                    <input type="checkbox" id="lectura" name="intereses[]" value="lectura"> Lectura <br>
+                    <input type="checkbox" id="viajes" name="intereses[]" value="viajes"> Viajes <br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <form action="procesar.php" method="post" enctype="multipart/form-data">
+                        <label for="archivo">Seleccionar Archivo:</label>
+                        <input type="file" id="archivo" name="archivo">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="comentarios">Comentarios:</label><br> <textarea id="comentarios"
+                        name="comentarios" rows="4" cols="50"></textarea> </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><label for="rango">Rango:</label>
+                    <input type="range" id="rango" name="rango" min="0" max="100" step="1">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="telefono">Teléfono:</label></td>
+                <td align="center"><input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}"
+                        placeholder="Ejemplo: 1234567890"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="Pincha aqui para sacar un 10 en lenguaje de marcas"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><label action="procesar.php" method="post" autocomplete="off">
+
+                        <label for="fechaHora">Fecha y Hora:</label>
+                        <input type="datetime-local" id="fechaHora" name="fechaHora">
+            </tr>
+            <tr>
+                <td align="center"><input type="submit" value="Enviar"></td>
+                <td align="center"><input type="reset" value="Restablecer"></td>
+
+            </tr>
+
+
+        </form>
+
+
+    </table>
+    <br>
+    
+    <table border="5" align="center">
+        <th>
+            PDF DEL TEMA 6 
+        </th>
+        <tr>
+           <td><br><iframe width="640" height="360" src="PDF/Tema 2_6 Formularios HTML.pdf" frameborder="2"></iframe></td> 
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

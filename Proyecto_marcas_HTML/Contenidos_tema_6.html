@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+
+    <meta charset="UTF-8">
+
+
+
+
+    <title>CONTENIDOS TEMA 6</title>
+
+
+
+
+</head>
+
+<body style="background-color: rgba(211, 211, 211, 0.418);">
+    <table align="center" width="65%" border="0">
+
+        <tr>
+
+            <th align="left" colspan="3" style="color: #28332a;">
+                <div id="ancla12">
+<hr>
+                    Contenidos del tema 6: Formularios
+                    <hr>
+                </div>
+
+            <td bgcolor=" aquamarine"><hr><a href="AaPractica_Marcas.html">Volver al inicio</a><hr></td>
+
+            </th>
+
+        </tr>
+    </table>
+    <br>
+    <table align="center" width="65%" border="0">
+        <tr>
+
+            <td align="center"><hr><strong>Tipo</strong><hr></td>
+
+            <td align="center"><hr><strong>Descripción</strong><hr></td>
+
+            <td align="center"><hr><strong>Comando</strong><hr></td>
+
+            <td align="center"><hr><strong>Atributos</strong><hr></td>
+
+        </tr>
+        <tr>
+            <td><hr>Contenedor del formulario</td>
+            <td><hr>Se utiliza para crear un formulario en una página web</td>
+            <td><hr>
+                < form>...< /form>
+            </td>
+            <td><hr>id, action, method, autocomplete, enctype, novalidate, target</td>
+        </tr>
+        <tr>
+            <td>Controles de entrada de datos</td>
+            <td>Permite a los desarrolladores recopilar información del usuario a través de diversos tipos de campos de
+                entrada</td>
+            <td>
+                < input (atributos)>
+            </td>
+            <td>id, name, value, placeholder, required, readonly, disable, type</td>
+        </tr>
+        <tr>
+            <td><em>Tipos de elementos < input></em></td>
+            <td>Para crear un campo de entrada de texto simple, se utiliza el tipo <strong> "text"</strong></td>
+            <td>El tipo <strong>"password"</strong> crea un campo de entrada donde los caracteres ingresados se ocultan
+            </td>
+            <td>Las casillas de verificación permiten a los usuarios seleccionar múltiples opciones de una lista. El
+                tipo es <strong>“checkbox”</strong></td>
+        </tr>
+        <tr>
+            <td><em>Tipos de elementos < input></em></td>
+            <td>Los botones de opción, tipo <strong>“checkbox”</strong>, permiten seleccionar una única opción de un
+                conjunto</td>
+            <td>El tipo <strong>"number"</strong> crea un campo de entrada para ingresar valores numéricos. Puedes
+                especificar el rango de números permitidos utilizando los atributos min y max</td>
+            <td>El tipo <strong>"email"</strong> crea un campo de entrada específico para direcciones de correo
+                electrónico</td>
+        </tr>
+        <tr>
+            <td><em>Tipos de elementos < input></em></td>
+            <td>El tipo <strong>"hidden"</strong> crea un campo invisible para el usuario, pero que se manda al servidor
+            </td>
+            <td>El tipo <strong>"file"</strong> permite a los usuarios cargar archivos. Los usuarios pueden seleccionar
+                un archivo de su dispositivo utilizando el cuadro de diálogo de carga de archivos</td>
+            <td>El tipo <strong>"submit"</strong> crea un botón que envía el formulario y sus datos al servidor</td>
+        </tr>
+        <tr>
+            <td><em>Tipos de elementos < input></em></td>
+            <td>El tipo <strong>"reset"</strong> un botón que resetea el formulario</td>
+            <td>El tipo <strong>"button"</strong> crea un botón genérico que puede usarse para diversas acciones en la
+                página, como abrir una ventana emergente, enviar datos mediante JavaScript, etc</td>
+            <td>El tipo <strong>"range"</strong> crea un control deslizante que permite a los usuarios seleccionar un
+                valor dentro de un rango específico</td>
+        </tr>
+        <tr>
+            <td><em>Tipos de elementos < input></em></td>
+            <td>El tipo <strong>"tel"</strong> crea un campo de entrada para números de teléfono</td>
+            <td>El tipo <strong>"color"</strong> crea un botón de selección de un color a través de una paleta de
+                colores</td>
+            <td>El tipo <strong>"image"</strong> crea un control como el submit, pero usando una imagen</td>
+        </tr>
+        <tr>
+            <td><em>Tipos de elementos < input></em></td>
+            <td>El tipo <strong>"url"</strong> crea un campo de entrada para URL</td>
+            <td>El tipo <strong>"date"</strong> crea un campo de entrada para seleccionar fechas utilizando un selector
+                de fecha nativo del navegador</td>
+            <td>El tipo <strong>"datetime-local"</strong> crea un campo de entrada para seleccionar fecha y hora</td>
+        </tr>
+        <tr>
+            <td><em>Tipos de elementos < input></em></td>
+            <td>El tipo <strong>"month"</strong> crea un campo de entrada para seleccionar un mes y de un año</td>
+            <td>El tipo <strong>"week"</strong> crea un campo de entrada para seleccionar una semana de un año</td>
+            <td align="center"> -</td>
+        </tr>
+        <tr>
+            <td>Etiquetas para controles</td>
+            <td>Se utiliza para asociar una descripción con un elemento de formulario específico</td>
+            <td>
+                < label (atributos)>...< /label>
+            </td>
+            <td>for y form</td>
+        </tr>
+        <tr>
+            <td>Áreas de texto</td>
+            <td>Se utiliza para crear un área de texto multilínea en un formulario web</td>
+            <td>
+                < textarea (atributos))>...< /textarea>
+            </td>
+            <td>Autofocus, cols, disabled, form, maxlength, name, placeholder, readonly, required, rows, wrap</td>
+        </tr>
+        <tr>
+            <td>Listas de selección</td>
+            <td>Se utiliza para crear un menú desplegable</td>
+            <td>
+                < select (atributos)>...< /select>
+            </td>
+            <td>Autofocus, disabled, form, multiple, name, required, size</td>
+        </tr>
+        <tr>
+            <td>Elementos de listas de selección</td>
+            <td>Representa una opción en una lista desplegable.Cada opción tiene un valor asociado que se envía al
+                servidor cuando se selecciona la opción en el formulario</td>
+            <td>
+                < option (atributos)>...< /option>
+            </td>
+            <td>Value, label, selected, disabled</td>
+        </tr>
+        <tr>
+            <td>Grupos en listas de selección</td>
+            <td>Se usa para agrupar opciones relacionadas dentro de una lista desplegable(elemento < select>)</td>
+            <td>
+                < optgroup>...< /optgroup>
+            </td>
+            <td>label y disabled</td>
+        </tr>
+        <tr>
+            <td>Listas de selección</td>
+            <td>Se utiliza para crear una lista de opciones predefinidas que se pueden utilizar en un campo de entrada
+                de texto</td>
+            <td>
+                < datalist>...< /datalist>
+            </td>
+            <td>id</td>
+        </tr>
+        <tr>
+            <td>Botones</td>
+            <td>Se utiliza para crear un botón interactivo en una página</td>
+            <td>
+                < button>...< /button>
+            </td>
+            <td>type, autofocus, disabled, form, name</td>
+        </tr>
+        <tr>
+            <td>Agrupación de elementos</td>
+            <td>La etiqueta < fieldset> se utiliza para agrupar elementos relacionados en un formulario web.El elemento
+                    < fieldset> se utiliza junto con la etiqueta < legend> para proporcionar un título para el grupo de
+                            elementos</td>
+            <td>
+                < fieldset>
+                    < legend>...< /legend>
+                            < /fieldset>
+            </td>
+            <td>disabled, form, name</td>
+        </tr>
+        <tr>
+            <td>Salida de datos</td>
+            <td>Se utiliza para representar el resultado de un cálculo o una operación realizada por uns cript en una
+                página web</td>
+            <td>
+                < output>...< /output>
+            </td>
+            <td>for, form, name, value</td>
+        </tr>
+        <tr>
+            <td>Avance de procesos <hr>
+
+            </td>
+            <td>Se utiliza para mostrar el progreso de una tarea <hr></td>
+            <td>
+                < progress(atributos)>...< /progress> <hr>
+            </td>
+            <td>Max, form, name, value <hr></td>
+        </tr>
+    </table>
+    <br>
+    <table align="center" width="65%" border="1">
+        <tr>
+
+            <td bgcolor="greenyellow" style="color: rgb(112, 128, 39)" colspan="4"><strong> <a href="Ejemplo_tema_6.html">
+                        Ejemplo de un formulario</a></strong></td>
+
+        </tr>
+    </table>
+</body>
+
+</html>
